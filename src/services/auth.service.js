@@ -4,9 +4,10 @@ import jwt from 'jsonwebtoken';
 import {
     ACCESS_TOKEN_EXPIRES_IN,
     HASH_SALT_ROUNDS,
-    MIN_PASSWORD_LENGTH
+    
   } from '../constants/auth.constant.js';
 import { ACCESS_TOKEN_SECRET } from '../constants/env.constant.js';
+
 
 export class AuthService {
     async signUp(email, password, passwordConfirm, name) {

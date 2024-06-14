@@ -11,8 +11,6 @@ const router = express.Router();
 const usersRepository = new UsersRepository(prisma);
 const usersController = new UsersController(usersRepository);
 
-
-
 router.get('/profile', authMiddleware, usersController.getUsers);
  
 

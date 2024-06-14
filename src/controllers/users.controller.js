@@ -19,7 +19,7 @@ export class UsersController {
                 name,
                 role,
                 createdAt,
-                updatedAt // 오타 수정
+                updatedAt 
             });
         } catch (err) {
             next(err);
